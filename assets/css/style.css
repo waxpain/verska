@@ -1,0 +1,445 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    text-decoration: none;
+    font-family: "Bleeker Cyrillic", "Coats Regular";
+    box-sizing: border-box;
+    transition: all 0.5s;
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: "Coats Regular";
+    src: url(../fonts/Coats/CoatsRegular.otf);
+}
+
+@font-face {
+    font-family: "Bleeker Cyrillic";
+    src: url(../fonts/BleekerCyrillic/BleekerCyrillic.ttf);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+/* header */
+
+header {
+    background-color: #FAF2D2;
+}
+
+.cont_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo p {
+    font-size: 48px;
+    color: #BA5C34;
+    font-family: "Coats Regular";
+}
+
+input {
+    width: 300px;
+    height: 40px;
+    border: 1px #BA5C34 solid;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 20px;
+}
+
+header a {
+    background-color: #BA5C34;
+    color: white;
+    padding: 15px 30px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+header a:hover {
+    transform: scale(1.1);
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.line {
+    width: 50px;
+    height: 5px;
+    background-color: #BA5C34;
+    cursor: pointer;
+}
+/* header */
+
+/* banner */
+.banner {
+    background-image: url(../media/banner/banner.png);
+    height: 550px;
+    position: relative;
+    background-size: cover;
+}
+
+.banner_cont {
+    padding: 115px 70px;
+}
+
+h1 {
+    font-size: 48px;
+    color: #FAF2D2;
+}
+
+.banner_cont a {
+    position: absolute;
+    bottom: 123px;
+    right: 750px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background-color: #BA5C34;
+    color: #FAF2D2;
+    padding: 15px 30px;
+    font-size: 32px;
+}
+
+.banner_cont a:hover {
+    transform: scale(1.1);
+    background-color: #FAF2D2;
+    color: #BA5C34;
+}
+/* banner */
+
+/* catalog */
+.catalog {
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    
+}
+
+.catalog h2 {
+    color: #BA5C34;
+    text-align: center;
+    font-size: 36px;
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    cursor: pointer;
+}
+
+.categories .open {
+    background: #BA5C34;
+    color: #FAF2D2;
+}
+
+.categ {
+    background-color: #FAF2D2;
+    color: #BA5C34;
+    padding: 5px 30px;
+    border-radius: 7px;
+    font-size: 24px;
+}
+
+.categ:hover {
+    transform: scale(1.1);
+    background: #BA5C34;
+    color: #FAF2D2;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 120px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    border: #BA5C34 1px solid;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px;
+    border-radius: 50px;
+}
+
+.card img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.name {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.group {
+    font-size: 16px;
+    color: #BA5C34;
+}
+
+.price {
+    text-align: right;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.info a {
+    font-size: 20px;
+    background-color: #BA5C34;
+    color: #FAF2D2;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 10px 0;
+}
+
+.info a:hover {
+    transform: scale(0.9);
+}
+
+.catalog .more {
+    font-size: 20px;
+    background-color: #BA5C34;
+    color: #FAF2D2;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 10px 0;
+}
+
+.catalog .more:hover {
+    transform: scale(1.1);
+}
+
+/* catalog */
+
+/* advantages */
+.advantages {
+    background-color: #FAF2D2;
+    padding: 50px;
+}
+
+.adv_cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card_adv {
+    text-align: center;
+   
+}
+
+.card_adv p {
+    color: #BA5C34;
+    font-size: 32px;
+}
+/* advantages */
+
+/* promo */
+.promo {
+    background-color: #BA5C34;
+    padding: 50px 0;
+}
+
+.promo h2 {
+    text-align: center;
+    color: #FAF2D2;
+}
+
+.promo_cont {
+    padding: 30px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.left p {
+    color: #FAF2D2;
+}
+
+.left .info_promo {
+    font-size: 32px;
+    width: 423px;
+}
+
+.correction {
+    font-size: 14px;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.right p {
+    color: #FAF2D2;
+    font-size: 20px;
+}
+
+.right a {
+    font-size: 24px;
+    color: #BA5C34;
+    background-color: #FAF2D2;
+    border-radius: 10px;
+    padding: 5px 190px;
+}
+
+.right a:hover {
+    transform: scale(1.1);
+}
+/* promo */
+
+/* reviews */
+.reviews {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 50px 0;
+}
+
+.reviews h2 {
+    color: #BA5C34;
+    text-align: center;
+}
+
+.cards_rev {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    justify-content: center;
+}
+
+.card_rev {
+    border: 3px solid #BA5C34;
+    border-radius: 30px;
+    padding: 30px;
+    background-color: #FAF2D2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 200px;
+}
+
+.card_rev p {
+    color: #BA5C34;
+    width: 300px;
+}
+
+.top {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.top p {
+    font-size: 20px;
+    width: 240px;
+}
+
+.slider {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.point {
+    background-color: #BA5C34;
+    border-radius: 30px;
+    width: 15px;
+    height: 15px;
+}
+
+.point:hover {
+    transform: scale(1.2);
+}
+
+.big {
+    width: 20px;
+    height: 20px;
+}
+/* reviews */
+
+/* contacts */
+.contacts {
+    position: relative;
+    background-color: #FAF2D2;
+    height: 370px;
+}
+
+.tg_big {
+    position: absolute;
+    left: 200px;
+    top: 0;
+}
+
+.vk_big {
+    position: absolute;
+    right: 100px;
+    bottom: -20px;
+}
+
+.contacts_cont {
+    background-image: url(../media/contacts/contacts.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 636px;
+    height: 267px;
+    position: absolute;
+    left: 555px;
+    bottom: 0;
+    padding: 30px 100px;
+}
+
+.contacts_cont p {
+    width: 440px;
+    font-size: 24px;
+    color: #FAF2D2;
+}
+
+.center {
+    text-align: center;
+}
+
+.social {
+    position: absolute;
+    right: 110px;
+    padding-top: 15px;
+}
+/* contacts */
