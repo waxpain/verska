@@ -54,7 +54,6 @@ header {
 
 input {
     width: 300px;
-    height: 40px;
     border: 1px #BA5C34 solid;
     border-radius: 10px;
     padding: 10px 20px;
@@ -168,7 +167,7 @@ h1 {
 
 .cards {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     gap: 120px;
     justify-content: center;
     align-items: center;
@@ -187,6 +186,8 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 250px;
+    height: 194.17px;
 }
 
 .name {
@@ -443,3 +444,286 @@ h1 {
     padding-top: 15px;
 }
 /* contacts */
+
+/* footer */
+footer {
+    background-color: #BA5C34;
+    height: 240px;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+.footer a {
+    color: #FAF2D2;
+    font-size: 16px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.logo_footer {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.logo_footer p {
+    color: #FAF2D2;
+    font-size: 48px;
+    font-family: "Coats Regular";
+}
+
+.info_footer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: right;
+}
+/* footer */
+
+/* autorization */
+.autorization {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    position: relative;
+}
+
+.autorization h2 {
+    text-align: center;
+    color: #BA5C34;
+}
+
+.autorization_info {
+    display: flex;
+    gap: 100px;
+}
+
+.left_auto {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: #BA5C34;
+    padding: 50px 60px;
+    border-radius: 50px;
+}
+
+.left_auto p {
+    font-size: 40px;
+    color: #FAF2D2;
+    width: 380px;
+}
+
+.right_auto {
+    display: flex;
+    flex-direction: column;
+}
+
+.right_auto form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.right_auto form label {
+    font-size: 28px;
+    color: #BA5C34;
+}
+
+.right_auto form .checkbox {
+    
+    width: 15px;
+    height: 15px;
+}
+
+.right_auto form .checkbox_label {
+    font-size: 12px;
+} 
+
+.right_auto input {
+    border-radius: 10px;
+    border: #BA5C34 3px solid;
+    background-color: #FAF2D2;
+    margin-bottom: 20px;
+}
+
+.checkbox_all {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
+    justify-content: start;
+}
+
+.checkbox_all a {
+    color: #BA5C34;
+}
+
+.right_auto form .btn {
+    background-color: #BA5C34;
+    color: #FAF2D2;  
+    cursor: pointer;
+}
+
+.entry {
+    position: absolute;
+    right: 70px;
+    bottom: 25px;
+    font-size: 16px;
+    color: #BA5C34;
+    text-decoration: underline;
+}
+/* autorization */
+
+/* entry */
+.entry_block {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.entry_block h2 {
+    color: #BA5C34;
+}
+
+.entry_block form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 28px;
+    color: #FAF2D2;
+}
+
+.entry_block_bg {
+    background-color: #BA5C34;
+    padding: 50px 60px;
+    border-radius: 50px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.entry_block_bg a {
+    background: #FAF2D2;
+    color: #BA5C34;
+    border-radius: 10px;
+    padding: 10px 60px;
+    font-size: 28px;
+    text-align: center;
+}
+
+.entry_block_bg img {
+    position: absolute;
+    bottom: 120px;
+    right: 30px;
+}
+
+.pas {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.pas input {
+    background-color: #FAF2D2;
+}
+
+.pas .short {
+    width: 200px;
+}
+/* entry */
+
+/* product */
+.product_more {
+    margin-top: 250px;
+    display: flex;
+    gap: 50px;
+}
+
+.img_prod {
+    border: 3px #BA5C34 solid;
+    padding: 0px 80px 0px ;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 400px;
+}
+
+.about {
+    color: #BA5C34;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.about .norm {
+    font-size: 20px;
+    height: 225px;
+    width: 300px
+}
+
+.about .bigger {
+    font-size: 32px;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #FAF2D2;
+    padding: 20px;
+    border: #BA5C34 1px solid;
+    border-radius: 20px;
+}
+
+.top .price_prod {
+    font-size: 32px;
+    text-align: center;
+}
+
+.top p {
+    color: #BA5C34;
+}
+
+.pay {
+    display: flex;
+    gap: 10px;
+}
+
+.rev {
+    display: flex;
+    gap: 10px;
+}
+
+.rev p {
+    color: #BA5C34;
+}
+
+.product_more .right a {
+    font-size: 24px;
+    color: #BA5C34;
+    background-color: #FAF2D2;
+    border: 1px #BA5C34 solid;
+    border-radius: 10px;
+    padding: 10px 50px;
+}
+/* product */
